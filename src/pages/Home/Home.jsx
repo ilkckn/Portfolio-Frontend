@@ -18,11 +18,11 @@ function Home() {
           <p> {t("title")} </p>
         </div>
         <div className="contactLinkIcons">
-          <a href="https://github.com/ilkckn?tab=repositories">
+          <a href="https://github.com/ilkckn?tab=repositories" target="_blank">
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/musacekcen-webdeveloper"
+            href="https://www.linkedin.com/in/musacekcen-webdeveloper" target="_blank"
           >
             <FaLinkedin />
           </a>

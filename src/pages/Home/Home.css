@@ -1,5 +1,4 @@
 .homeContainer {
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -40,12 +39,16 @@
 }
 
 .homeContainer .info .contactLinkIcons {
-  font-size: 3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   color: var(--fourth-color);
   margin-bottom: 2rem;
+}
+
+.homeContainer .info .contactLinkIcons a {
+  color: var(--fourth-color);
+  font-size: 3rem;
 }
 
 .homeContainer .info .about-me-text {
@@ -73,7 +76,7 @@
   color: #436278;
   position: relative;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .homeContainer .info .resume button:hover {
@@ -91,13 +94,13 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .homeContainer .image {
     width: 40rem;
   }
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width: 820px) {
   /* .homeContainer {
     align-items: center;
     margin: 0;
@@ -111,13 +114,13 @@
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .homeContainer .image {
     width: 35rem;
   }
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width: 414px) {
   .homeContainer .image {
     width: 25rem;
   }
