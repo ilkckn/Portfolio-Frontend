@@ -18,12 +18,16 @@ function Home() {
           <p> {t("title")} </p>
         </div>
         <div className="contactLinkIcons">
-          <FaGithub />
-          <FaLinkedin />
+          <a href="https://github.com/ilkckn?tab=repositories">
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/musacekcen-webdeveloper"
+          >
+            <FaLinkedin />
+          </a>
         </div>
-        <p className="about-me-text">
-          {t("aboutMeText")}
-        </p>
+        <p className="about-me-text">{t("aboutMeText")}</p>
         <div className="resume">
           <a href="/resume.pdf" download>
             <button className="resumeButton"> {t("resume")} </button>
