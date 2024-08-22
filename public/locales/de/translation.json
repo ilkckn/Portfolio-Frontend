@@ -1,0 +1,53 @@
+{
+  "about": {
+    "header": "Über mich",
+    "aboutMe": "Über mich",
+    "getToKnowMore": "Erfahren Sie mehr über mich",
+    "experience": "Erfahrung",
+    "experience1": "1 Jahr",
+    "experience2": "Frontend-Entwicklung",
+    "education": "Ausbildung",
+    "education1": "Bachelor-Abschluss",
+    "education2": "Informatik-Ingenieurwesen",
+    "text": "Ich strebe eine Karriere im Ingenieurwesen an und plane, meine Reise an der Universität mit einer Spezialisierung auf Webentwicklung zu beginnen. Der Fokus auf die Verbesserung meiner Designfähigkeiten und die Ausrichtung an relevanten Richtlinien ist für mich entscheidend. Mit einer Ausbildung in Webentwicklung und Design habe ich ein Jahr dem Studium von UI-Design gewidmet und bin derzeit in einem 1,5-jährigen Webentwicklungskurs eingeschrieben. Bekannt für meine hohe Motivation, Freundlichkeit, Empathie und Entschlossenheit, liegt meine Leidenschaft sowohl im Design als auch in der Entwicklung. Es bereitet mir große Freude, Farben und Designkonzepte zu erkunden."
+  },
+  "home": "Startseite",
+  "experience": {
+    "header1": "Erfahrung",
+    "header2": "Entdecken Sie meine",
+    "frontendDevelopment": "Frontend-Entwicklung",
+    "skills": "HTML",
+    "skills1": "CSS",
+    "skills2": "JavaScript",
+    "skills3": "React",
+    "skills4": "SaaS",
+    "skills5": "Material-UI",
+    "backendDevelopment": "Backend-Entwicklung",
+    "skills6": "Node.js",
+    "skills7": "Express.js",
+    "skills8": "MongoDB",
+    "skills9": "Git"
+  },
+  "projects": {
+    "header1": "Projekte",
+    "header2": "Brows Meine Projekte"
+  },
+  "contact": {
+    "header1": "Kontakt",
+    "header2": "In Kontakt treten",
+    "formLabel": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht"
+    },
+    "submit": "Absenden",
+    "success": "Erfolg",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "closeModal": "Schließen"
+  },
+  "name": "Musa",
+  "lastName": "Cekcen",
+  "title": "Frontend-Entwickler",
+  "aboutMeText": "Mit einer Leidenschaft für die Entwicklung moderner React-Webanwendungen für kommerzielle Unternehmen.",
+  "resume": "Lebenslauf"
+}

@@ -1,0 +1,57 @@
+{
+  "about": {
+    "header": "About",
+    "aboutMe": "About Me",
+    "getToKnowMore": "Get to know more about me",
+    "experience": "Experience",
+    "experience1": "1 Year",
+    "experience2": "Frontend Development",
+    "education": "Education",
+    "education1": "Bachelor's Degree",
+    "education2": "Computer Engineering",
+    "text": "Expressing my aim to pursue a career in engineering, I plan to begin my journey at university by specializing in web development.Focusing on the enhancement of design skills and aligning with relevant guidance is crucial to me. Equipped with training in web development and design, I dedicated a year to studying UI design and am currently enrolled in a 1.5-year web development course.Known for being highly motivated, friendly, empathetic, and determined, my passion lies in both design and development.Exploring color and design concepts brings me great pleasure."
+  },
+  "home": "Home",
+  "experience": {
+    "header1": "Experience",
+    "header2": "Explore My",
+    "frontendDevelopment": "Frontend Development",
+    "skills": "Html",
+    "skills1": "Css",
+    "skills2": "Javascript",
+    "skills3": "React",
+    "skills4": "SaaS",
+    "skills5": "Material-UI",
+    "backendDevelopment": "Backend Development",
+    "skills6": "Node.js",
+    "skills7": "Express.Js",
+    "skills8": "MongoDB",
+    "skills9": "Git"
+  },
+  "projects": {
+    "header1": "Projects",
+    "header2": "Brows My Projects",
+    "project1": "Book Store",
+    "project2": "Watch Store",
+    "github": "GitHub",
+    "liveDemo": "Live Demo"
+  },
+  "contact": {
+    "header1": "Contact",
+    "header2": "Get in Touch",
+    "formLabel": {
+      "name": "Name",
+      "email": "E-mail",
+      "message": "Message"
+    },
+    "submit": "Submit",
+    "success": "Success",
+    "successMessage": "Your message has been sent successfully.",
+    "closeModal": "Close"
+  },
+  "name": "Musa",
+  "lastName": "Cekcen",
+  "title": "Frontend Developer",
+  "aboutMeText": "With a passion for developing modern React web apps for commercial businesses.",
+  "resume": "Resume"
+}

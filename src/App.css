@@ -1,0 +1,67 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+.container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.dark {
+  --background-color: #1c1c1c;
+  --text-color: white;
+}
+
+.container.light {
+  --background-color: #fffefa;
+  --text-color: black;
+}
+
+/* ----------------Home--------------------- */
+
+.container.dark .homeContainer .info h1 {
+  color: var(--fifth-color);
+}
+
+.container.dark .homeContainer .info .contactLinkIcons {
+  color: var(--fifth-color);
+}
+
+.container.dark .homeContainer .info .resume button {
+  border-color: var(--fifth-color);
+  color: var(--fifth-color);
+}
+
+.container.dark .homeContainer .info .resume button:hover {
+  background-color: var(--fifth-color);
+  color: var(--secondary-color);
+}
+
+/* --------------------About---------------------- */
+
+.container.dark .aboutContainer .headers h1 {
+  color: var(--fifth-color);
+}
+
+.container.dark .aboutContent .exp-edu .exp,
+.container.dark .aboutContent .exp-edu .edu {
+  border: 1px solid var(--fifth-color);
+}
+
+.container.dark .aboutContent .exp-edu .exp svg,
+.container.dark .aboutContent .exp-edu .edu svg {
+  color: var(--fifth-color);
+}
+.container.dark .aboutContent .exp-edu .exp h2,
+.container.dark .aboutContainer .exp-edu .edu h2 {
+  color: var(--fifth-color);
+}
+
+.container.dark .aboutContent .exp-edu .exp p,
+.container.dark .aboutContent .exp-edu .edu p {
+  color: var(--text-color);
+}

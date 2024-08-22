@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f26a2e;
+  --secondary-color: #f7f7f7;
+  --third-color: #36566d;
+  --fourth-color: #436278;
+  --fifth-color: #7aa1bc;
+  --sixth-color: #333f49;
+  --tertiary-color: #333;
+  --quaternary-color: #fff;
+
+  font-size: 62.5%;
+  font-family: "Michroma", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--quaternary-color);
+  color: var(--tertiary-color);
+}

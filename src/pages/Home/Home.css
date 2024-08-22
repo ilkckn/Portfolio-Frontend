@@ -1,0 +1,132 @@
+.homeContainer {
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin-left: 80px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.homeContainer .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  /* width: 80rem; */
+}
+
+.homeContainer .info h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  font-family: "Michroma", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--third-color);
+}
+
+.homeContainer .info .title p {
+  font-size: 2.8rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.homeContainer .info .contactLinkIcons {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--fourth-color);
+  margin-bottom: 2rem;
+}
+
+.homeContainer .info .about-me-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.homeContainer .info .resume button {
+  width: 160px;
+  height: 50px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #436278;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #436278;
+  position: relative;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.homeContainer .info .resume button:hover {
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+}
+
+.homeContainer .image {
+  width: 50rem;
+}
+
+.homeContainer .image img {
+  width: 100%;
+  background-color: var(--fifth-color);
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1024px) {
+  .homeContainer .image {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width:820px) {
+  /* .homeContainer {
+    align-items: center;
+    margin: 0;
+  } */
+  .homeContainer .image {
+    width: 35rem;
+  }
+
+  .homeContainer .info h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .homeContainer .image {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .homeContainer .image {
+    width: 25rem;
+  }
+
+  .homeContainer .info h1 {
+    font-size: 3rem;
+  }
+
+  .homeContainer .info .title p {
+    font-size: 2.3rem;
+  }
+}

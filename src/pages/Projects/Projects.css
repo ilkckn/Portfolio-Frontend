@@ -1,0 +1,102 @@
+.projectsContainer {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 80px;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.projectsContainer .headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.projectsContainer .headers h1 {
+  font-size: 6.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--fifth-color);
+}
+
+.projectsContainer .headers p {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.projectsContainer .projectsContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 80%;
+  min-height: 50rem;
+}
+
+.projectsContent .projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* border: 1px solid var(--fifth-color);
+  border-radius: 5px; */
+  padding: 2rem;
+  height: 100%;
+}
+
+.projectsContent .projectBox img {
+  width: 45rem;
+  border-radius: 1rem;
+}
+
+.projectsContent .projectBox h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--fifth-color);
+}
+
+.projectsContent .projectBox p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 40rem;
+  text-align: center;
+  /* color: var(--tertiary-color); */
+  margin-bottom: 1rem;
+}
+
+.projectsContent .projectBox .github-liveDemo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.projectsContent .projectBox .github-liveDemo button {
+  width: 10.5rem;
+  height: 3.5rem;
+  background-color: var(--fourth-color);
+  color: var(--quaternary-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.projectsContent .projectBox .github-liveDemo button:hover {
+  background-color: var(--sixth-color);
+  color: var(--quaternary-color);
+}

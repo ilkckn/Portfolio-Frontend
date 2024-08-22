@@ -1,0 +1,32 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  min-height: 100vh;
+  width: calc(100% - 80px);
+}
+
+.contactContainer .headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.contactContainer .headers h1 {
+  font-size: 6.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--fifth-color);
+}
+
+.contactContainer .headers p {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
