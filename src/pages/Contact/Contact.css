@@ -5,7 +5,7 @@
   justify-content: center;
   margin-left: 80px;
   min-height: 100vh;
-  width: calc(100% - 80px);
+  width: calc(100% - 60px);
 }
 
 .contactContainer .headers {
@@ -29,4 +29,48 @@
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 414px) {
+  .contactContainer {
+    margin-left: 60px;
+  }
+
+  .contactContainer .headers {
+    margin-bottom: 3rem;
+  }
+
+  .contactContainer .headers h1 {
+    font-size: 3.5rem;
+  }
+  
+  .contactContainer .headers p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contactContainer {
+    margin-left: 60px;
+  }
+
+  .contactContainer .headers {
+    margin-bottom: 3rem;
+  }
+
+  .contactContainer .headers h1 {
+    font-size: 3.5rem;
+  }
+  
+  .contactContainer .headers p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
 }
