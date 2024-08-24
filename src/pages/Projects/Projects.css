@@ -36,7 +36,7 @@
 .projectsContainer .projectsContent {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 3rem;
   width: 80%;
