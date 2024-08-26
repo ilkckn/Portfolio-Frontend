@@ -20,10 +20,10 @@ function Projects() {
           <img src={project3} alt="project2" />
           <h2>{t("projects.project3")}</h2>
           <p>
-            A watch store with many watch brands, where you can shop online,
-            where you can find the watch you are looking for specifically with a
-            wide search option, with a user-friendly interface with men's and
-            women's watches.{" "}
+            An online flower and marriage organization site where you can shop
+            online, design your marriage organization as you wish, with the most
+            beautiful flowers, bouquets and gifts you can send to your loved
+            ones.{" "}
           </p>
           <div className="github-liveDemo" target="_blank">
             <a href="https://github.com/ilkckn/Bloomora">
