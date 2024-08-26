@@ -50,6 +50,12 @@
 .homeContainer .info .contactLinkIcons a {
   color: var(--fourth-color);
   font-size: 3rem;
+  transition: all 0.5s ease;
+}
+
+.homeContainer .info .contactLinkIcons a:hover {
+  color: var(--fifth-color);
+  scale: 1.1;
 }
 
 .homeContainer .info .about-me-text {

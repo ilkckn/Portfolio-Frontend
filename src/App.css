@@ -40,6 +40,14 @@
   color: var(--secondary-color);
 }
 
+.container.dark .homeContainer .info .contactLinkIcons a {
+  color: var(--fifth-color);
+}
+
+.container.dark .homeContainer .info .contactLinkIcons a:hover {
+  color: var(--text-color);
+}
+
 /* --------------------About---------------------- */
 
 .container.dark .aboutContainer .headers h1 {
