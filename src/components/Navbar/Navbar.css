@@ -57,6 +57,11 @@
   display: inline-block;
 }
 
+.links a.active {
+  color: var(--sixth-color);
+  font-weight: 300;
+}
+
 .links a:hover {
   color: var(--sixth-color);
   font-weight: 300;
@@ -76,6 +81,7 @@
 .links a:hover::after {
   height: 100%;
 }
+
 
 /* ----------------Language Theme---------------- */
 
