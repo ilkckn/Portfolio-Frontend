@@ -41,7 +41,8 @@
   gap: 3rem;
 }
 
-.experienceContent .box1, .box2 {
+.experienceContent .box1,
+.box2 {
   width: 45rem;
   height: 30rem;
   border: 1px solid var(--fifth-color);
@@ -55,7 +56,8 @@
   padding-top: 4rem;
 }
 
-.experienceContent .box1 h2, .box2 h2 {
+.experienceContent .box1 h2,
+.box2 h2 {
   font-size: 2.5rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -64,7 +66,8 @@
   /* color: var(--third-color); */
 }
 
-.experienceContent .box1 .skillsContainer, .box2 .skillsContainer {
+.experienceContent .box1 .skillsContainer,
+.box2 .skillsContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +77,8 @@
   width: 80%;
 }
 
-.experienceContent .box1 .skillsContainer .couple, .box2 .skillsContainer .couple {
+.experienceContent .box1 .skillsContainer .couple,
+.box2 .skillsContainer .couple {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +86,8 @@
   width: 100%;
 }
 
-.experienceContent .box1 .skillsContainer .mySkills, .box2 .skillsContainer .mySkills {
+.experienceContent .box1 .skillsContainer .mySkills,
+.box2 .skillsContainer .mySkills {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -90,7 +95,8 @@
   width: 100%;
 }
 
-.experienceContent .box1 .skillsContainer .mySkills h3, .box2 .skillsContainer .mySkills h3 {
+.experienceContent .box1 .skillsContainer .mySkills h3,
+.box2 .skillsContainer .mySkills h3 {
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -98,7 +104,8 @@
   /* color: var(--fifth-color); */
 }
 
-.experienceContent .box1 .skillsContainer .mySkills .icon, .box2 .skillsContainer .mySkills .icon {
+.experienceContent .box1 .skillsContainer .mySkills .icon,
+.box2 .skillsContainer .mySkills .icon {
   font-size: 2rem;
   color: var(--third-color);
   display: flex;
@@ -110,50 +117,178 @@
     font-size: 5rem;
   }
 
-  .experienceContainer .experienceContent .box1, .box2 {
+  .experienceContainer .experienceContent .box1,
+  .box2 {
     width: 70%;
   }
 
-  .experienceContent .box1 h2, .box2 h2 {
+  .experienceContent .box1 h2,
+  .box2 h2 {
     font-size: 2rem;
   }
 
-  .experienceContent .box1 .skillsContainer .mySkills h3, .box2 .skillsContainer .mySkills h3 {
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
     font-size: 1.5rem;
-  }  
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .experienceContainer {
+    margin-left: 100px;
+    min-height: 100vh;
+    width: calc(100% - 100px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 5rem;
+  }
+
+  .experienceContainer .headers p {
+    font-size: 3rem;
+  }
+
   .experienceContainer .headers h1 {
-    font-size: 5rem;
+    font-size: 6.5rem;
   }
 
-  .experienceContainer .experienceContent .box1, .box2 {
-    width: 60%;
-    height: 25rem;
-    padding: 2rem 2rem;
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 80%;
+    height: 33rem;
+    padding: 3rem 3rem;
+    justify-content: center;
+    gap: 2rem;
   }
 
-  .experienceContent .box1 h2, .box2 h2 {
-    font-size: 1.8rem;
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 3.4rem;
   }
 
-  .experienceContent .box1 .skillsContainer, .box2 .skillsContainer {
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
     gap: 3rem;
     justify-content: space-between;
     width: 100%;
   }
-  .experienceContent .box1 .skillsContainer .couple, .box2 .skillsContainer .couple {
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
     gap: 2rem;
     width: 100%;
   }
 
-  .experienceContent .box1 .skillsContainer .mySkills h3, .box2 .skillsContainer .mySkills h3 {
-    font-size: 1.3rem;
-  }  
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 2.5rem;
+  }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 820px) {
+  .experienceContainer {
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 5rem;
+  }
+
+  .experienceContainer .headers h1 {
+    font-size: 5rem;
+  }
+
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 75%;
+    height: 27rem;
+    padding: 3rem 3rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 2.4rem;
+  }
+
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experienceContainer {
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 5rem;
+  }
+
+  .experienceContainer .headers h1 {
+    font-size: 5rem;
+  }
+
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 75%;
+    height: 27rem;
+    padding: 3rem 3rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 2.4rem;
+  }
+
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .experienceContainer {
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 3rem;
+  }
+
   .experienceContainer .headers h1 {
     font-size: 3rem;
   }
@@ -162,27 +297,199 @@
     font-size: 1.3rem;
   }
 
-  .experienceContainer .experienceContent .box1, .box2 {
+  .experienceContainer .experienceContent .box1,
+  .box2 {
     width: 80%;
-    height: 20rem;
-    padding: 2rem 2rem;
+    height: 18rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .experienceContent .box1 h2, .box2 h2 {
-    font-size: 1.3rem;
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 1.4rem;
   }
 
-  .experienceContent .box1 .skillsContainer, .box2 .skillsContainer {
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
     gap: 1rem;
     justify-content: space-between;
     width: 100%;
   }
-  .experienceContent .box1 .skillsContainer .couple, .box2 .skillsContainer .couple {
-    gap: 2rem;
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 1.5rem;
     width: 100%;
   }
 
-  .experienceContent .box1 .skillsContainer .mySkills h3, .box2 .skillsContainer .mySkills h3 {
-    font-size: 1.2rem;
-  }  
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .experienceContainer {
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 3rem;
+  }
+
+  .experienceContainer .headers h1 {
+    font-size: 3rem;
+  }
+
+  .experienceContainer .headers p {
+    font-size: 1.3rem;
+  }
+
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 80%;
+    height: 18rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 1.4rem;
+  }
+
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .experienceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 3rem;
+  }
+
+  .experienceContainer .headers h1 {
+    font-size: 3rem;
+  }
+
+  .experienceContainer .headers p {
+    font-size: 1.3rem;
+  }
+
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 80%;
+    height: 18rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 1.4rem;
+  }
+
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .experienceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+    min-height: 100vh;
+    width: calc(100% - 60px);
+  }
+
+  .experienceContainer .headers {
+    margin-bottom: 3rem;
+  }
+
+  .experienceContainer .headers h1 {
+    font-size: 3rem;
+  }
+
+  .experienceContainer .headers p {
+    font-size: 1.3rem;
+  }
+
+  .experienceContainer .experienceContent .box1,
+  .box2 {
+    width: 80%;
+    height: 15rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experienceContent .box1 h2,
+  .box2 h2 {
+    font-size: 1.3rem;
+  }
+
+  .experienceContent .box1 .skillsContainer,
+  .box2 .skillsContainer {
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .experienceContent .box1 .skillsContainer .couple,
+  .box2 .skillsContainer .couple {
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .experienceContent .box1 .skillsContainer .mySkills h3,
+  .box2 .skillsContainer .mySkills h3 {
+    font-size: 1.1rem;
+  }
 }

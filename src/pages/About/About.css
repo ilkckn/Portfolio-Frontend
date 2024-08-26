@@ -1,12 +1,12 @@
 /* Ana Container */
 .aboutContainer {
   width: calc(100% - 80px);
+  min-height: 100vh;
   margin-left: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 /* Başlıklar */
@@ -147,7 +147,7 @@
   }
 
   .aboutContainer .aboutContent .image img {
-    width: 40rem;
+    width: 38rem;
   }
 
   .aboutContent .experience-education-text {
@@ -162,8 +162,8 @@
 
   .aboutContent .exp-edu .exp,
   .aboutContent .exp-edu .edu {
-   width: 70%;
-   height: 25rem;
+   width: 65%;
+   height: 22rem;
   }
 
   .aboutContent .exp-edu .exp svg,
@@ -182,7 +182,7 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 2rem;
+    font-size: 2.1rem;
     width: 90%;
     text-align: center;
   }
@@ -259,8 +259,8 @@
   .aboutContainer {
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 100px;
-    width: calc(100% - 100px);
+    margin-left: 60px;
+    width: calc(100% - 60px);
   }
 
   .aboutContainer .aboutContent {
@@ -269,15 +269,15 @@
   }
 
   .aboutContainer .headers {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .aboutContainer .headers h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .aboutContainer .headers p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .aboutContainer .aboutContent {
@@ -285,19 +285,23 @@
   }
 
   .aboutContainer .aboutContent .image img {
-    width: 25rem;
+    width: 29rem;
   }
 
   .aboutContent .experience-education-text {
     width: 100%;
     padding: 0 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .aboutContent .experience-education-text .exp-edu {
+    gap: 1rem;
   }
 
   .aboutContent .exp-edu .exp,
   .aboutContent .exp-edu .edu {
    width: 70%;
-   height: 20rem;
+   height: 17rem;
   }
 
   .aboutContent .exp-edu .exp svg,
@@ -307,12 +311,16 @@
 
   .aboutContent .exp-edu .exp h2,
   .aboutContent .exp-edu .edu h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   .aboutContent .exp-edu .exp p,
   .aboutContent .exp-edu .edu p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .aboutContent .experience-education-text {
+    gap: 3rem;
   }
 
   .aboutContent .experience-education-text .text {
@@ -326,8 +334,8 @@
   .aboutContainer {
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 100px;
-    width: calc(100% - 100px);
+    margin-left: 60px;
+    width: calc(100% - 60px);
   }
 
   .aboutContainer .aboutContent {
@@ -336,15 +344,15 @@
   }
 
   .aboutContainer .headers {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .aboutContainer .headers h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 
   .aboutContainer .headers p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .aboutContainer .aboutContent {
@@ -358,13 +366,17 @@
   .aboutContent .experience-education-text {
     width: 100%;
     padding: 0 1rem;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .aboutContent .experience-education-text .exp-edu {
+    gap: 1rem;
   }
 
   .aboutContent .exp-edu .exp,
   .aboutContent .exp-edu .edu {
    width: 70%;
-   height: 20rem;
+   height: 17rem;
   }
 
   .aboutContent .exp-edu .exp svg,
@@ -374,16 +386,16 @@
 
   .aboutContent .exp-edu .exp h2,
   .aboutContent .exp-edu .edu h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   .aboutContent .exp-edu .exp p,
   .aboutContent .exp-edu .edu p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     width: 90%;
     text-align: center;
   }
@@ -446,7 +458,7 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -515,11 +527,11 @@
   }
 
   .aboutContainer .headers h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .aboutContainer .headers p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .aboutContainer .aboutContent {
@@ -539,16 +551,17 @@
   .aboutContent .exp-edu .exp,
   .aboutContent .exp-edu .edu {
    width: 80%;
+   height: 13rem;
   }
 
   .aboutContent .exp-edu .exp svg,
   .aboutContent .exp-edu .edu svg {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .aboutContent .exp-edu .exp h2,
   .aboutContent .exp-edu .edu h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .aboutContent .exp-edu .exp p,
@@ -557,7 +570,7 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 90%;
   }
 }
@@ -580,11 +593,11 @@
   }
 
   .aboutContainer .headers h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .aboutContainer .headers p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .aboutContainer .aboutContent {
@@ -603,7 +616,7 @@
 
   .aboutContent .exp-edu .exp svg,
   .aboutContent .exp-edu .edu svg {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .aboutContent .exp-edu .exp h2,
@@ -622,9 +635,137 @@
   }
 }
 
+@media screen and (max-width: 412px) {
+  .aboutContainer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .aboutContainer .aboutContent {
+    gap: 3rem;
+    padding-top: 0;
+  }
+
+  .aboutContainer .headers {
+    margin-bottom: 1rem;
+  }
+
+  .aboutContainer .headers h1 {
+    font-size: 3rem;
+  }
+
+  .aboutContainer .headers p {
+    font-size: 1.3rem;
+  }
+
+  .aboutContainer .aboutContent {
+    gap: 1rem;
+  }
+
+  .aboutContainer .aboutContent .image img {
+    width: 15rem;
+  }
+
+  .aboutContent .experience-education-text {
+    width: 100%;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .aboutContent .experience-education-text .exp-edu {
+    gap: 1rem;
+  }
+
+  .aboutContent .exp-edu .exp svg,
+  .aboutContent .exp-edu .edu svg {
+    font-size: 3rem;
+  }
+
+  .aboutContent .exp-edu .exp h2,
+  .aboutContent .exp-edu .edu h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutContent .exp-edu .exp p,
+  .aboutContent .exp-edu .edu p {
+    font-size: 1.2rem;
+  }
+
+  .aboutContent .experience-education-text .text {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .aboutContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .aboutContainer .aboutContent {
+    gap: 2rem;
+    padding-top: 0;
+  }
+
+  .aboutContainer .headers {
+    margin-bottom: 1rem;
+  }
+
+  .aboutContainer .headers h1 {
+    font-size: 2.5rem;
+  }
+
+  .aboutContainer .headers p {
+    font-size: 1rem;
+  }
+
+  .aboutContainer .aboutContent {
+    gap: 1rem;
+  }
+
+  .aboutContainer .aboutContent .image img {
+    width: 15rem;
+  }
+
+  .aboutContent .experience-education-text {
+    width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .aboutContent .exp-edu .exp,
+  .aboutContent .exp-edu .edu {
+    height: 11rem;
+  }
+
+  .aboutContent .exp-edu .exp svg,
+  .aboutContent .exp-edu .edu svg {
+    font-size: 2rem;
+  }
+
+  .aboutContent .exp-edu .exp h2,
+  .aboutContent .exp-edu .edu h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutContent .exp-edu .exp p,
+  .aboutContent .exp-edu .edu p {
+    font-size: 1.2rem;
+  }
+
+  .aboutContent .experience-education-text .text {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .aboutContainer {
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     margin-left: 60px;
     width: calc(100% - 60px);
@@ -661,6 +802,11 @@
     gap: 1rem;
   }
 
+  .aboutContent .exp-edu .exp,
+  .aboutContent .exp-edu .edu {
+    height: 11rem;
+  }
+
   .aboutContent .exp-edu .exp svg,
   .aboutContent .exp-edu .edu svg {
     font-size: 2rem;
@@ -677,6 +823,6 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
