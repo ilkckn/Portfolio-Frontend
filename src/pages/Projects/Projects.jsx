@@ -17,6 +17,25 @@ function Projects() {
 
       <div className="projectsContent">
         <div className="projectBox">
+          <img src={project3} alt="project2" />
+          <h2>{t("projects.project2")}</h2>
+          <p>
+            A watch store with many watch brands, where you can shop online,
+            where you can find the watch you are looking for specifically with a
+            wide search option, with a user-friendly interface with men's and
+            women's watches.{" "}
+          </p>
+          <div className="github-liveDemo" target="_blank">
+            <a href="https://github.com/ilkckn/Bloomora">
+              <button className="github">{t("projects.github")}</button>
+            </a>
+            <a href="https://final-project-jran.onrender.com/" target="_blank">
+              <button className="liveDemo">{t("projects.liveDemo")}</button>
+            </a>
+          </div>
+        </div>
+
+        <div className="projectBox">
           <img src={project1} alt="project1" />
           <h2>{t("projects.project1")}</h2>
           <p>
@@ -48,25 +67,6 @@ function Projects() {
               <button className="github">{t("projects.github")}</button>
             </a>
             <a href="https://watche-commerce.onrender.com/" target="_blank">
-              <button className="liveDemo">{t("projects.liveDemo")}</button>
-            </a>
-          </div>
-        </div>
-
-        <div className="projectBox">
-          <img src={project3} alt="project2" />
-          <h2>{t("projects.project2")}</h2>
-          <p>
-            A watch store with many watch brands, where you can shop online,
-            where you can find the watch you are looking for specifically with a
-            wide search option, with a user-friendly interface with men's and
-            women's watches.{" "}
-          </p>
-          <div className="github-liveDemo" target="_blank">
-            <a href="https://github.com/ilkckn/Bloomora">
-              <button className="github">{t("projects.github")}</button>
-            </a>
-            <a href="https://final-project-jran.onrender.com/" target="_blank">
               <button className="liveDemo">{t("projects.liveDemo")}</button>
             </a>
           </div>
