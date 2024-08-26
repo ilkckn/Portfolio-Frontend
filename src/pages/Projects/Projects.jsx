@@ -18,7 +18,7 @@ function Projects() {
       <div className="projectsContent">
         <div className="projectBox">
           <img src={project3} alt="project2" />
-          <h2>{t("projects.project2")}</h2>
+          <h2>{t("projects.project3")}</h2>
           <p>
             A watch store with many watch brands, where you can shop online,
             where you can find the watch you are looking for specifically with a
