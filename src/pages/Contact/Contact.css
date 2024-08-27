@@ -175,6 +175,7 @@
   .contactContainer {
     margin-left: 60px;
     min-height: 100vh;
+    width: calc(100% - 60px);
   }
 
   .contactContainer .headers {
