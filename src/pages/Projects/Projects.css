@@ -7,14 +7,14 @@
   align-items: center;
   flex-direction: column;
   margin-left: 80px;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 
 .projectsContainer .headers {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .projectsContainer .headers h1 {
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
   width: 80%;
   min-height: 50rem;
 }

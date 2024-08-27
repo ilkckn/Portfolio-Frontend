@@ -32,8 +32,13 @@
     "header1": "Projects",
     "header2": "Brows My Projects",
     "project1": "Book Store",
+    "project1Info": "An online flower and marriage organization site where you can shop online, design your marriage organization as you wish, with the most beautiful flowers, bouquets and gifts you can send to your loved ones.",
     "project2": "Watch Store",
+    "project2Info": "It's a great bookstore where you can find all types of books, buy them online, search for specific books with a wide search option, become a member and get discounts and be informed about all offers.",
     "project3": "Bloomora Flower Shop",
+    "project3Info": "A watch store with many watch brands, where you can shop online, where you can find the watch you are looking for specifically with a wide search option, with a user-friendly interface with men's and women's watches.",
+    "project4": "Jewellery Store",
+    "project4Info": "A jewelry store where you can shop online, where you can find the jewelry you are looking for specifically with a wide search option, with a user-friendly",
     "github": "GitHub",
     "liveDemo": "Live Demo"
   },

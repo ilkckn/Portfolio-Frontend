@@ -30,7 +30,17 @@
   },
   "projects": {
     "header1": "Projekte",
-    "header2": "Brows Meine Projekte"
+    "header2": "Durchsuchen Sie meine Projekte",
+    "project1": "Buchladen",
+    "project1Info": "Eine Online-Blumen- und Hochzeitsorganisationsseite, auf der Sie online einkaufen, Ihre Hochzeitsorganisation nach Wunsch gestalten können, mit den schönsten Blumen, Sträußen und Geschenken, die Sie Ihren Liebsten senden können.",
+    "project2": "Uhrenladen",
+    "project2Info": "Es ist ein großartiger Buchladen, in dem Sie alle Arten von Büchern finden, online kaufen, nach bestimmten Büchern mit einer breiten Suchoption suchen, Mitglied werden und Rabatte erhalten können und über alle Angebote informiert werden.",
+    "project3": "Blumenladen Bloomora",
+    "project3Info": "Ein Uhrenladen mit vielen Uhrenmarken, in dem Sie online einkaufen können, in dem Sie die speziell gesuchte Uhr mit einer breiten Suchoption finden können, mit einer benutzerfreundlichen Oberfläche für Herren- und Damenuhren.",
+    "project4": "Juwelierladen",
+    "project4Info": "Ein Juweliergeschäft, in dem Sie online einkaufen können, in dem Sie das speziell gesuchte Schmuckstück mit einer breiten Suchoption finden können, mit einer benutzerfreundlichen Oberfläche.",
+    "github": "GitHub",
+    "liveDemo": "Live-Demo"
   },
   "contact": {
     "header1": "Kontakt",

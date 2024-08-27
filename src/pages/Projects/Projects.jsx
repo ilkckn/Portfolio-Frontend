@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import project1 from "../../images/projects/project1.jpg";
 import project2 from "../../images/projects/project2.jpg";
 import project3 from "../../images/projects/project3.jpg";
+import project4 from "../../images/projects/project4.jpg";
 
 function Projects() {
   const { t } = useTranslation();
@@ -21,11 +22,11 @@ function Projects() {
                 ? prevVisibleProjects
                 : [...prevVisibleProjects, index]
             );
-            observer.unobserve(entry.target); 
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     projectRefs.current.forEach((ref) => {
@@ -47,7 +48,7 @@ function Projects() {
       </div>
 
       <div className="projectsContent">
-        {[project1, project2, project3].map((project, index) => (
+        {[project1, project2, project3, project4].map((project, index) => (
           <div
             key={index}
             className={`projectBox ${
@@ -59,10 +60,13 @@ function Projects() {
             <h2>{t(`projects.project${index + 1}`)}</h2>
             <p>
               {index === 0
-                ? "An online flower and marriage organization site where you can shop online, design your marriage organization as you wish, with the most beautiful flowers, bouquets and gifts you can send to your loved ones."
+                ? t("projects.project1Info")
                 : index === 1
-                ? "It's a great bookstore where you can find all types of books, buy them online, search for specific books with a wide search option, become a member and get discounts and be informed about all offers."
-                : "A watch store with many watch brands, where you can shop online, where you can find the watch you are looking for specifically with a wide search option, with a user-friendly interface with men's and women's watches."}
+                ? t("projects.project2Info")
+                : index === 2
+                ? t("projects.project3Info")
+                : t("projects.project4Info")
+              }
             </p>
             <div className="github-liveDemo">
               <a
@@ -71,7 +75,9 @@ function Projects() {
                     ? "Book-Shop"
                     : index === 1
                     ? "WatchE-Commerce"
-                    : "Bloomora"
+                    : index === 2
+                    ? "Bloomora"
+                    : "Jewellery-ECommerce"
                 }`}
                 target="_blank"
               >
@@ -83,7 +89,9 @@ function Projects() {
                     ? "final-project-jran.onrender.com"
                     : index === 1
                     ? "book-shop-zc44.onrender.com"
-                    : "watche-commerce.onrender.com"
+                    : index === 2
+                    ? "watche-commerce.onrender.com"
+                    : "ilkckn.github.io/Jewellery-ECommerce/"
                 }`}
                 target="_blank"
               >
