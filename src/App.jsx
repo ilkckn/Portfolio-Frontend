@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
@@ -8,11 +8,17 @@ import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
+
+  useEffect(() => {
+    document.body.className = theme; // Body'ye tema sınıfını ekleyin
+  }, [theme]);
 
   return (
     <div className={`container ${theme}`}>
