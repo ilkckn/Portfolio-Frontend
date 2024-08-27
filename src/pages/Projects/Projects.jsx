@@ -47,7 +47,7 @@ function Projects() {
       </div>
 
       <div className="projectsContent">
-        {[project3, project1, project2].map((project, index) => (
+        {[project1, project2, project3].map((project, index) => (
           <div
             key={index}
             className={`projectBox ${
