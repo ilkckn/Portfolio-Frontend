@@ -48,7 +48,7 @@ function Projects() {
       </div>
 
       <div className="projectsContent">
-        {[project1, project2, project3, project4].map((project, index) => (
+        {[project3, project2, project1, project4].map((project, index) => (
           <div
             key={index}
             className={`projectBox ${
@@ -60,22 +60,22 @@ function Projects() {
             <h2>{t(`projects.project${index + 1}`)}</h2>
             <p>
               {index === 0
-                ? t("projects.project1Info")
+                ? t("projects.project3Info")
                 : index === 1
                 ? t("projects.project2Info")
                 : index === 2
-                ? t("projects.project3Info")
+                ? t("projects.project1Info")
                 : t("projects.project4Info")}
             </p>
             <div className="github-liveDemo">
               <a
                 href={`https://github.com/ilkckn/${
                   index === 0
-                    ? "Book-Shop"
+                    ? "Bloomora"
                     : index === 1
                     ? "WatchE-Commerce"
                     : index === 2
-                    ? "Bloomora"
+                    ? "Book-Shop"
                     : "Jewellery-ECommerce"
                 }`}
                 target="_blank"
@@ -85,11 +85,11 @@ function Projects() {
               <a
                 href={`https://${
                   index === 0
-                    ? "book-shop-zc44.onrender.com"
+                    ? "final-project-jran.onrender.com"
                     : index === 1
                     ? "watche-commerce.onrender.com"
                     : index === 2
-                    ? "final-project-jran.onrender.com"
+                    ? "book-shop-zc44.onrender.com"
                     : "ilkckn.github.io/Jewellery-ECommerce/"
                 }`}
                 target="_blank"
