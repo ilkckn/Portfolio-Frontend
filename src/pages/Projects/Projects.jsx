@@ -64,15 +64,16 @@ function Projects() {
                 ? "It's a great bookstore where you can find all types of books, buy them online, search for specific books with a wide search option, become a member and get discounts and be informed about all offers."
                 : "A watch store with many watch brands, where you can shop online, where you can find the watch you are looking for specifically with a wide search option, with a user-friendly interface with men's and women's watches."}
             </p>
-            <div className="github-liveDemo" target="_blank">
+            <div className="github-liveDemo">
               <a
                 href={`https://github.com/ilkckn/${
                   index === 0
-                    ? "Bloomora"
-                    : index === 1
                     ? "Book-Shop"
-                    : "WatchE-Commerce"
+                    : index === 1
+                    ? "WatchE-Commerce"
+                    : "Bloomora"
                 }`}
+                target="_blank"
               >
                 <button className="github">{t("projects.github")}</button>
               </a>
