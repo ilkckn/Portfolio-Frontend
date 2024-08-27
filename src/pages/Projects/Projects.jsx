@@ -65,8 +65,7 @@ function Projects() {
                 ? t("projects.project2Info")
                 : index === 2
                 ? t("projects.project3Info")
-                : t("projects.project4Info")
-              }
+                : t("projects.project4Info")}
             </p>
             <div className="github-liveDemo">
               <a
@@ -86,11 +85,11 @@ function Projects() {
               <a
                 href={`https://${
                   index === 0
-                    ? "final-project-jran.onrender.com"
-                    : index === 1
                     ? "book-shop-zc44.onrender.com"
-                    : index === 2
+                    : index === 1
                     ? "watche-commerce.onrender.com"
+                    : index === 2
+                    ? "final-project-jran.onrender.com"
                     : "ilkckn.github.io/Jewellery-ECommerce/"
                 }`}
                 target="_blank"
