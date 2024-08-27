@@ -43,11 +43,44 @@
   padding-top: 5rem;
 }
 
+.aboutContainer .aboutContent .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Image */
 .aboutContainer .aboutContent .image img {
   width: 45rem;
   border-radius: 50%;
   background-color: var(--fifth-color);
+  opacity: 0; /* Başlangıçta görünmez */
+  transform: scale(0.5); /* Başlangıçta küçük */
+  transition: transform 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aboutContainer .aboutContent .image.animate img {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .aboutContent .experience-education-text {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Home.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import image from "../../images/logo/MC.png";
@@ -6,6 +6,32 @@ import { useTranslation } from "react-i18next";
 
 function Home() {
   const { t } = useTranslation();
+  const imageRef = useRef(null);
+  const [isImageVisible, setIsImageVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsImageVisible(true);
+            observer.unobserve(imageRef.current); // Animasyon bir kez çalıştıktan sonra durdur
+          }
+        });
+      },
+      { threshold: 0.5 } // Görünürlüğün %50'si sağlandığında animasyon tetiklenir
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="homeContainer" id="home">
@@ -22,7 +48,8 @@ function Home() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/musacekcen-webdeveloper" target="_blank"
+            href="https://www.linkedin.com/in/musacekcen-webdeveloper"
+            target="_blank"
           >
             <FaLinkedin />
           </a>
@@ -35,7 +62,12 @@ function Home() {
         </div>
       </div>
       <div className="image">
-        <img src={image} alt="musa" />
+        <img
+          ref={imageRef}
+          src={image}
+          alt="musa"
+          className={isImageVisible ? "visible" : ""}
+        />
       </div>
     </div>
   );

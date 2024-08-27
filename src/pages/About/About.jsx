@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./About.css";
 import image from "../../images/logo/MC1.png";
 import { IoIosRibbon } from "react-icons/io";
@@ -7,6 +7,32 @@ import { useTranslation } from "react-i18next";
 
 function About() {
   const { t } = useTranslation();
+  const [isVisible, setIsVisible] = useState(false);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect(); // Observer'ı durdur, sadece bir kez animasyon yapmasını sağla
+          }
+        });
+      },
+      { threshold: 1 } // Görüntünün %100'ü görünür olduğunda animasyonu tetikler
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="aboutContainer" id="about">
@@ -16,7 +42,7 @@ function About() {
       </div>
 
       <div className="aboutContent">
-        <div className="image">
+        <div className={`image ${isVisible ? "animate" : ""}`} ref={imageRef}>
           <img src={image} alt="Profile" />
         </div>
         <div className="experience-education-text">
@@ -35,9 +61,7 @@ function About() {
             </div>
           </div>
           <div className="text">
-            <p>
-              {t("about.text")}
-            </p>
+            <p>{t("about.text")}</p>
           </div>
         </div>
       </div>

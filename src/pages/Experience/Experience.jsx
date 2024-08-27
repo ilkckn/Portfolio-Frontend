@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Experience.css";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
 function Experience() {
   const { t } = useTranslation();
+  const contentRef = useRef(null);
+  const [isContentVisible, setIsContentVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsContentVisible(true);
+            observer.unobserve(contentRef.current); // Gözlemlemeyi durdur
+          }
+        });
+      },
+      { threshold: 0.5 } // Görünürlüğün %50'si sağlandığında animasyon tetiklenir
+    );
+
+    if (contentRef.current) {
+      observer.observe(contentRef.current);
+    }
+
+    return () => {
+      if (contentRef.current) {
+        observer.unobserve(contentRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="experienceContainer" id="experience">
@@ -12,7 +38,10 @@ function Experience() {
         <p>{t("experience.header2")}</p>
         <h1>{t("experience.header1")}</h1>
       </div>
-      <div className="experienceContent">
+      <div
+        ref={contentRef}
+        className={`experienceContent ${isContentVisible ? "visible" : ""}`}
+      >
         <div className="box1">
           <h2>{t("experience.frontendDevelopment")}</h2>
           <div className="skillsContainer">

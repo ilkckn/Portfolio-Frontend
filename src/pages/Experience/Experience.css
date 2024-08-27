@@ -41,6 +41,27 @@
   gap: 3rem;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.experienceContainer .experienceContent {
+  opacity: 0; /* Başlangıçta görünmez */
+  transform: scale(0.5); /* Başlangıçta küçültülmüş */
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.experienceContainer .experienceContent.visible {
+  animation: fadeIn 2s ease forwards; /* Animasyon bitiminde son durumu korur */
+}
+
 .experienceContent .box1,
 .box2 {
   width: 45rem;
@@ -357,6 +378,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
   }
 
   .experienceContent .box1 h2,
@@ -413,6 +435,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
   }
 
   .experienceContent .box1 h2,
@@ -469,6 +492,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0;
   }
 
   .experienceContent .box1 h2,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { BsMoonStars } from "react-icons/bs";
@@ -8,8 +8,9 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../i18n/i18n";
 
 function Navbar({ toggleTheme, currentTheme }) {
+  const initialActiveLink = localStorage.getItem("activeLink") || "home";
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home"); // Varsayılan olarak "home" aktif
+  const [activeLink, setActiveLink] = useState(initialActiveLink);
 
   const { t } = useTranslation();
 
@@ -22,8 +23,19 @@ function Navbar({ toggleTheme, currentTheme }) {
   };
 
   const handleSetActive = (to) => {
-    setActiveLink(to); // Tıklanan linki aktif yap
+    setActiveLink(to);
+    localStorage.setItem("activeLink", to);
+    setTimeout(() => {
+      window.location.hash = to; // Sayfa yönlendirmesi için hash'i ayarla
+    }, 0);
   };
+
+  useEffect(() => {
+    // Sayfa yüklendiğinde kaydedilen linke otomatik scroll
+    if (activeLink && activeLink !== "home") {
+      document.getElementById(activeLink)?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeLink]);
 
   return (
     <aside className="navbarContainer">
@@ -53,7 +65,6 @@ function Navbar({ toggleTheme, currentTheme }) {
               to="home"
               smooth={true}
               duration={1000}
-              onSetActive={() => handleSetActive("home")}
               onClick={() => handleSetActive("home")}
             >
               {t("home")}
@@ -65,7 +76,6 @@ function Navbar({ toggleTheme, currentTheme }) {
               to="about"
               smooth={true}
               duration={1000}
-              onSetActive={() => handleSetActive("about")}
               onClick={() => handleSetActive("about")}
             >
               {t("about.header")}
@@ -77,7 +87,6 @@ function Navbar({ toggleTheme, currentTheme }) {
               to="experience"
               smooth={true}
               duration={1000}
-              onSetActive={() => handleSetActive("experience")}
               onClick={() => handleSetActive("experience")}
             >
               {t("experience.header1")}
@@ -89,7 +98,6 @@ function Navbar({ toggleTheme, currentTheme }) {
               to="projects"
               smooth={true}
               duration={1000}
-              onSetActive={() => handleSetActive("projects")}
               onClick={() => handleSetActive("projects")}
             >
               {t("projects.header1")}
@@ -101,7 +109,6 @@ function Navbar({ toggleTheme, currentTheme }) {
               to="contact"
               smooth={true}
               duration={1000}
-              onSetActive={() => handleSetActive("contact")}
               onClick={() => handleSetActive("contact")}
             >
               {t("contact.header1")}
