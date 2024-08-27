@@ -148,6 +148,11 @@
     height: 50rem;
   }
 
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
+  }
+
   .homeContainer .lottie-wrapper {
     top: -30%;
     left: -30%;
@@ -194,6 +199,11 @@
     height: 35rem;
   }
 
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
+  }
+
   .homeContainer .lottie-wrapper {
     top: -30%;
     left: -30%;
@@ -237,6 +247,11 @@
   .homeContainer .image {
     width: 35rem;
     height: 35rem;
+  }
+
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
   }
 
   .homeContainer .lottie-wrapper {
@@ -331,6 +346,11 @@
     height: 23rem;
   }
 
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
+  }
+
   .homeContainer .lottie-wrapper {
     top: -30%;
     left: -30%;
@@ -371,6 +391,11 @@
   .homeContainer .image {
     width: 22rem;
     height: 22rem;
+  }
+
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
   }
 
   .homeContainer .lottie-wrapper {
@@ -420,6 +445,11 @@
     height: 20rem;
   }
 
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
+  }
+
   .homeContainer .lottie-wrapper {
     top: -30%;
     left: -30%;
@@ -460,6 +490,11 @@
   .homeContainer .image {
     width: 18rem;
     height: 18rem;
+  }
+
+  .homeContainer .image img {
+    top: 0rem;
+    left: 0rem;
   }
 
   .homeContainer .lottie-wrapper {
