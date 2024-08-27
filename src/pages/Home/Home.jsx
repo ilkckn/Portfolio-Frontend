@@ -3,11 +3,22 @@ import "./Home.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import image from "../../images/logo/MC.png";
 import { useTranslation } from "react-i18next";
+import Lottie from "react-lottie";
+import animationData from "../../images/home/Untitled_file.json";
 
 function Home() {
   const { t } = useTranslation();
   const imageRef = useRef(null);
   const [isImageVisible, setIsImageVisible] = useState(false);
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -15,11 +26,11 @@ function Home() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsImageVisible(true);
-            observer.unobserve(imageRef.current); 
+            observer.unobserve(imageRef.current);
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     if (imageRef.current) {
@@ -62,6 +73,9 @@ function Home() {
         </div>
       </div>
       <div className="image">
+        <div className="lottie-wrapper">
+          <Lottie className="lottie" options={defaultOptions} />
+        </div>
         <img
           ref={imageRef}
           src={image}

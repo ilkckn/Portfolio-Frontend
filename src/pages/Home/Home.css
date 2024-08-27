@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
+  gap: 1rem;
   margin-left: 80px;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80rem;
 }
 
 .homeContainer .info h1 {
@@ -100,16 +102,37 @@
   }
 }
 
+.homeContainer .image {
+  position: relative;
+  width: 35rem;
+  height: 35rem;
+}
+
+.homeContainer .lottie-wrapper {
+  position: absolute;
+  top: -65%;
+  left: -65%;
+  width: 220%;
+  height: 220%;
+  z-index: 1;
+}
+
 .homeContainer .image img {
-  width: 50rem;
-  background-color: var(--fifth-color);
-  border-radius: 50%;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
   opacity: 0;
+  border-radius: 50%;
   transform: scale(0.5);
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 2;
 }
 
 .homeContainer .image img.visible {
+  opacity: 1;
+  transform: scale(1);
   animation: fadeIn 2s ease forwards;
 }
 
@@ -120,9 +143,16 @@
     padding: 10rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 50rem;
     height: 50rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -159,9 +189,16 @@
     padding: 18rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 35rem;
     height: 35rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -197,9 +234,16 @@
     padding: 12rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 35rem;
     height: 35rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -237,9 +281,16 @@
     min-height: 100vh;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 25rem;
     height: 25rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -275,9 +326,16 @@
     padding: 18rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 23rem;
     height: 23rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -310,9 +368,16 @@
     padding: 18rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 22rem;
     height: 22rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -350,9 +415,16 @@
     padding: 7rem 0;
   }
 
-  .homeContainer .image img {
+  .homeContainer .image {
     width: 20rem;
     height: 20rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
@@ -378,6 +450,49 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .homeContainer {
+    margin-left: 60px;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .homeContainer .image {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
+  }
+
+  .homeContainer .info h1 {
+    font-size: 2rem;
+  }
+
+  .homeContainer .info .title p {
+    font-size: 1.7rem;
+  }
+
+  .homeContainer .info .contactLinkIcons a {
+    font-size: 2.5rem;
+  }
+
+  .homeContainer .info .about-me-text {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .homeContainer .info .resume button {
+    width: 130px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 344px) {
   .homeContainer {
     margin-left: 60px;
@@ -385,9 +500,16 @@
     padding-bottom: 15rem;
   }
 
-  .homeContainer .image img {
-    width: 20rem;
-    height: 20rem;
+  .homeContainer .image {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .homeContainer .lottie-wrapper {
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
   }
 
   .homeContainer .info h1 {
