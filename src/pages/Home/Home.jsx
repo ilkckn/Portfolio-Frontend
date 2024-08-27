@@ -15,11 +15,11 @@ function Home() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsImageVisible(true);
-            observer.unobserve(imageRef.current); // Animasyon bir kez çalıştıktan sonra durdur
+            observer.unobserve(imageRef.current); 
           }
         });
       },
-      { threshold: 0.5 } // Görünürlüğün %50'si sağlandığında animasyon tetiklenir
+      { threshold: 0.5 } 
     );
 
     if (imageRef.current) {

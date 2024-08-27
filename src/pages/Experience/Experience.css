@@ -53,13 +53,13 @@
 }
 
 .experienceContainer .experienceContent {
-  opacity: 0; /* Başlangıçta görünmez */
-  transform: scale(0.5); /* Başlangıçta küçültülmüş */
+  opacity: 0;
+  transform: scale(0.5);
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .experienceContainer .experienceContent.visible {
-  animation: fadeIn 2s ease forwards; /* Animasyon bitiminde son durumu korur */
+  animation: fadeIn 2s ease forwards; 
 }
 
 .experienceContent .box1,

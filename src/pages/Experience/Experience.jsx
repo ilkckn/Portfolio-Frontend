@@ -14,11 +14,11 @@ function Experience() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsContentVisible(true);
-            observer.unobserve(contentRef.current); // Gözlemlemeyi durdur
+            observer.unobserve(contentRef.current); 
           }
         });
       },
-      { threshold: 0.5 } // Görünürlüğün %50'si sağlandığında animasyon tetiklenir
+      { threshold: 0.5 } 
     );
 
     if (contentRef.current) {

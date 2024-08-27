@@ -54,8 +54,8 @@
   padding: 2rem;
   height: 100%;
 
-  opacity: 0; /* Başlangıçta görünmez */
-  transform: scale(0.5); /* Başlangıçta küçültülmüş */
+  opacity: 0; 
+  transform: scale(0.5);
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
@@ -71,15 +71,15 @@
 }
 
 .projectsContainer .projectsContent .projectBox.visible {
-  animation: fadeIn 2s ease forwards; /* Animasyon bitiminde son durumu korur */
+  animation: fadeIn 2s ease forwards; 
 }
 
 .projectsContainer .projectsContent .projectBox.visible:nth-child(2) {
-  animation-delay: 0.5s; /* İkinci kutu için gecikme */
+  animation-delay: 0.5s; 
 }
 
 .projectsContainer .projectsContent .projectBox.visible:nth-child(3) {
-  animation-delay: 1s; /* Üçüncü kutu için gecikme */
+  animation-delay: 1s; 
 }
 
 .projectsContent .projectBox img {

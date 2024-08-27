@@ -21,11 +21,11 @@ function Projects() {
                 ? prevVisibleProjects
                 : [...prevVisibleProjects, index]
             );
-            observer.unobserve(entry.target); // Animasyon tetiklendikten sonra gözlemlemeyi bırak
+            observer.unobserve(entry.target); 
           }
         });
       },
-      { threshold: 0.5 } // %50 görünür olduğunda tetiklenir
+      { threshold: 0.5 } 
     );
 
     projectRefs.current.forEach((ref) => {

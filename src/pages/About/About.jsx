@@ -16,11 +16,11 @@ function About() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.disconnect(); // Observer'ı durdur, sadece bir kez animasyon yapmasını sağla
+            observer.disconnect(); 
           }
         });
       },
-      { threshold: 1 } // Görüntünün %100'ü görünür olduğunda animasyonu tetikler
+      { threshold: 1 } 
     );
 
     if (imageRef.current) {
