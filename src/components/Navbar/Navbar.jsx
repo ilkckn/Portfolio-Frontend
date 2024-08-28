@@ -1,17 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import { BsMoonStars } from "react-icons/bs";
+import {
+  BsMoonStars,
+  BsHouse,
+  BsPerson,
+  BsBriefcase,
+  BsFolder,
+  BsEnvelope,
+} from "react-icons/bs";
 import { IoSunnyOutline } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
+import { LuArrowRightFromLine, LuArrowLeftFromLine } from "react-icons/lu";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n/i18n";
 
 function Navbar({ toggleTheme, currentTheme }) {
-  const initialActiveLink = localStorage.getItem("activeLink") || "home";
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(initialActiveLink);
-
+  const [expanded, setExpanded] = useState(false);
   const { t } = useTranslation();
 
   const toggleLanguageMenu = () => {
@@ -22,100 +28,99 @@ function Navbar({ toggleTheme, currentTheme }) {
     i18n.changeLanguage(lng);
   };
 
-  const handleSetActive = (to) => {
-    setActiveLink(to);
-    localStorage.setItem("activeLink", to);
-    setTimeout(() => {
-      window.location.hash = to; // Sayfa yönlendirmesi için hash'i ayarla
-    }, 0);
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
   };
 
-  useEffect(() => {
-    // Sayfa yüklendiğinde kaydedilen linke otomatik scroll
-    if (activeLink && activeLink !== "home") {
-      document.getElementById(activeLink)?.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [activeLink]);
-
   return (
-    <aside className="navbarContainer">
-      <nav className="links">
-        <div className="language-theme">
-          <div className="language-switcher">
-            <TfiWorld className="language" onClick={toggleLanguageMenu} />
-            {languageMenuOpen && (
-              <div className="language-menu">
-                <button onClick={() => changeLanguage("en")}>EN</button>
-                <button onClick={() => changeLanguage("de")}>DE</button>
-              </div>
-            )}
-          </div>
-          <li className="themeToggleButton" onClick={toggleTheme}>
-            {currentTheme === "light" ? (
-              <BsMoonStars className="darkIcon" />
-            ) : (
-              <IoSunnyOutline className="lightIcon" />
-            )}
-          </li>
-        </div>
+    <aside className={`navbarContainer ${expanded ? "expanded" : ""}`}>
+      <div className="navbarTop">
+        {expanded ? (
+          <LuArrowLeftFromLine className="arrowIcon" onClick={toggleExpanded} />
+        ) : (
+          <LuArrowRightFromLine
+            className="arrowIcon"
+            onClick={toggleExpanded}
+          />
+        )}
+      </div>
+      <nav className={`links ${expanded ? "expanded" : ""}`}>
         <ul>
           <li>
             <Link
-              className={`link ${activeLink === "home" ? "active" : ""}`}
+              className={`link ${expanded ? "expanded" : ""}`}
               to="home"
               smooth={true}
               duration={1000}
-              onClick={() => handleSetActive("home")}
             >
-              {t("home")}
+              <BsHouse className="link-icon" />
+              {expanded && <span>{t("home")}</span>}
             </Link>
           </li>
           <li>
             <Link
-              className={`link ${activeLink === "about" ? "active" : ""}`}
+              className={`link ${expanded ? "expanded" : ""}`}
               to="about"
               smooth={true}
               duration={1000}
-              onClick={() => handleSetActive("about")}
             >
-              {t("about.header")}
+              <BsPerson className="link-icon" />
+              {expanded && <span>{t("about.header")}</span>}
             </Link>
           </li>
           <li>
             <Link
-              className={`link ${activeLink === "experience" ? "active" : ""}`}
+              className={`link ${expanded ? "expanded" : ""}`}
               to="experience"
               smooth={true}
               duration={1000}
-              onClick={() => handleSetActive("experience")}
             >
-              {t("experience.header1")}
+              <BsBriefcase className="link-icon" />
+              {expanded && <span>{t("experience.header1")}</span>}
             </Link>
           </li>
           <li>
             <Link
-              className={`link ${activeLink === "projects" ? "active" : ""}`}
+              className={`link ${expanded ? "expanded" : ""}`}
               to="projects"
               smooth={true}
               duration={1000}
-              onClick={() => handleSetActive("projects")}
             >
-              {t("projects.header1")}
+              <BsFolder className="link-icon" />
+              {expanded && <span>{t("projects.header1")}</span>}
             </Link>
           </li>
           <li>
             <Link
-              className={`link ${activeLink === "contact" ? "active" : ""}`}
+              className={`link ${expanded ? "expanded" : ""}`}
               to="contact"
               smooth={true}
               duration={1000}
-              onClick={() => handleSetActive("contact")}
             >
-              {t("contact.header1")}
+              <BsEnvelope className="link-icon" />
+              {expanded && <span>{t("contact.header1")}</span>}
             </Link>
           </li>
         </ul>
       </nav>
+      <div className="language-theme">
+        <div className="language-switcher">
+          <TfiWorld className="language" onClick={toggleLanguageMenu} />
+          {languageMenuOpen && (
+            <div className="language-menu">
+              <button onClick={() => changeLanguage("en")}>EN</button>
+              <button onClick={() => changeLanguage("de")}>DE</button>
+            </div>
+          )}
+        </div>
+        <li className="themeToggleButton" onClick={toggleTheme}>
+          {currentTheme === "light" ? (
+            <BsMoonStars className="darkIcon" />
+          ) : (
+            <IoSunnyOutline className="lightIcon" />
+          )}
+        </li>
+      </div>
     </aside>
   );
 }

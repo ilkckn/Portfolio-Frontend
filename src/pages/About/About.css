@@ -143,8 +143,10 @@
 }
 
 .aboutContent .experience-education-text .text {
-  font-size: 1.5rem;
-  letter-spacing: .7px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
   padding-left: 1rem;
 }
 
@@ -215,8 +217,9 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     width: 90%;
+    line-height: 3rem;
     text-align: center;
   }
 }
@@ -357,8 +360,9 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.7rem;
-    width: 90%;
+    font-size: 1.8rem;
+    width: 80%;
+    line-height: 2.5rem;
     text-align: center;
   }
 }
@@ -428,9 +432,11 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.6rem;
-    width: 90%;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    width: 85%;
     text-align: center;
+    margin-top: 1rem;
   }
 }
 
@@ -603,7 +609,8 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
     width: 90%;
   }
 }
@@ -664,6 +671,7 @@
 
   .aboutContent .experience-education-text .text {
     font-size: 1.2rem;
+    line-height: 2rem;
     width: 90%;
   }
 }
@@ -727,7 +735,8 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
     width: 90%;
   }
 }
@@ -792,7 +801,8 @@
   }
 
   .aboutContent .experience-education-text .text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 }
 
@@ -857,5 +867,6 @@
 
   .aboutContent .experience-education-text .text {
     font-size: 1.1rem;
+    line-height: normal;
   }
 }
