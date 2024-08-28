@@ -60,11 +60,11 @@ function Projects() {
             <h2>{t(`projects.project${index + 1}`)}</h2>
             <p>
               {index === 0
-                ? t("projects.project3Info")
+                ? t("projects.project1Info")
                 : index === 1
                 ? t("projects.project2Info")
                 : index === 2
-                ? t("projects.project1Info")
+                ? t("projects.project3Info")
                 : t("projects.project4Info")}
             </p>
             <div className="github-liveDemo">
