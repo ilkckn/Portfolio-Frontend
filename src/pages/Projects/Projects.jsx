@@ -5,6 +5,7 @@ import project1 from "../../images/projects/project1.jpg";
 import project2 from "../../images/projects/project2.jpg";
 import project3 from "../../images/projects/project3.jpg";
 import project4 from "../../images/projects/project4.jpg";
+import project5 from "../../images/projects/project5.jpg";
 
 function Projects() {
   const { t } = useTranslation();
@@ -48,7 +49,7 @@ function Projects() {
       </div>
 
       <div className="projectsContent">
-        {[project3, project2, project1, project4].map((project, index) => (
+        {[project3, project2, project1, project4, project5].map((project, index) => (
           <div
             key={index}
             className={`projectBox ${
@@ -65,7 +66,9 @@ function Projects() {
                 ? t("projects.project2Info")
                 : index === 2
                 ? t("projects.project3Info")
-                : t("projects.project4Info")}
+                : index === 3
+                ? t("projects.project4Info")
+                : t("projects.project5Info")}
             </p>
             <div className="github-liveDemo">
               <a
@@ -76,7 +79,9 @@ function Projects() {
                     ? "WatchE-Commerce"
                     : index === 2
                     ? "Book-Shop"
-                    : "Jewellery-ECommerce"
+                    : index === 3
+                    ? "Jewellery-ECommerce"
+                    : "CryptoPlace"
                 }`}
                 target="_blank"
               >
@@ -85,12 +90,14 @@ function Projects() {
               <a
                 href={`https://${
                   index === 0
-                    ? "final-project-jran.onrender.com"
+                    ? "https://final-project-jran.onrender.com"
                     : index === 1
-                    ? "watche-commerce.onrender.com"
+                    ? "https://watche-commerce.onrender.com"
                     : index === 2
-                    ? "book-shop-zc44.onrender.com"
-                    : "ilkckn.github.io/Jewellery-ECommerce/"
+                    ? "https://book-shop-zc44.onrender.com"
+                    : index === 3
+                    ? "https://ilkckn.github.io/Jewellery-ECommerce/"
+                    : "https://cryptoplace-s81d.onrender.com"
                 }`}
                 target="_blank"
               >
